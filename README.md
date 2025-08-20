@@ -1,15 +1,9 @@
-Отлично 👍
-Я подготовлю тебе README.md для учебного проекта с Lexical на Next.js. Он объяснит структуру, установку и использование.
-
-⸻
-
-📌 README.md
-
 # Simple Lexical Describe
 
 Учебный проект на **Next.js 14 (App Router)** с интеграцией **Lexical editor**.
 Поддерживает базовое форматирование текста, списки, ссылки, а также прикрепление **изображений и файлов** с кнопкой удаления.
 
+<img src="https://s3.akarmain.ru/S/YzWdc.mp4" alt="Demo" width="600">
 ---
 
 ## 🚀 Возможности
@@ -29,14 +23,22 @@
 ---
 
 ## 📂 Структура проекта
-
+```
 src/
-├── app/
-│   └── page.tsx          # главная страница с редактором
-└── nodes/
-├── ImageNode.tsx     # кастомный узел для изображений
-└── FileCardNode.tsx  # кастомный узел для файлов
-
+├── app
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   └── editor
+│       └── Toolbar.tsx
+├── nodes
+│   ├── FileCardNode.tsx
+│   └── ImageNode.tsx
+├── styles
+│   └── ui.ts
+└── utils
+    └── sanitizeUrl.ts
+```
 ---
 
 ## ⚙️ Установка
@@ -49,7 +51,9 @@ cd simple-lexical-describe
 ```
 2.	Установи зависимости:
 
-`npm install`
+```bash
+npm install
+```
 
 ⸻
 
