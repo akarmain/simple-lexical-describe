@@ -1,0 +1,218 @@
+.editor-paragraph {
+	margin: 0 0 8px 0;
+}
+
+.editor-text-bold {
+	font-weight: bold;
+}
+
+.editor-text-italic {
+	font-style: italic;
+}
+
+.editor-link {
+	color: #2563eb;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.editor-ul {
+	padding-left: 1.2rem;
+	list-style: disc;
+}
+
+.editor-ol {
+	padding-left: 1.2rem;
+	list-style: decimal;
+}
+
+.editor-li {
+	margin: 4px 0;
+}
+
+.editor-li-nested {
+	list-style-type: circle;
+}
+
+/* карточки внутри редактора */
+.lex-image-wrap {
+	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
+	margin: 8px 0 12px;
+	border: 1px solid #e5e7eb;
+}
+
+.lex-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.lex-x {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 28px;
+	height: 28px;
+	border-radius: 9999px;
+	border: 1px solid #e5e7eb;
+	background: #fff;
+	cursor: pointer;
+	line-height: 24px;
+	font-size: 18px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+}
+
+.file-card {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+	padding: 10px 12px;
+	margin: 8px 0;
+}
+
+.file-card__icon {
+	font-size: 20px;
+}
+
+.file-card__body {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.file-card__name {
+	color: #111827;
+	text-decoration: none;
+	font-weight: 600;
+	word-break: break-all;
+}
+
+.file-card__name:hover {
+	text-decoration: underline;
+}
+
+.file-card__meta {
+	color: #6b7280;
+	font-size: 12px;
+}
+
+.file-card__x {
+	margin-left: auto;
+	width: 28px;
+	height: 28px;
+	border-radius: 9999px;
+	border: 1px solid #e5e7eb;
+	background: #fff;
+	cursor: pointer;
+	line-height: 24px;
+	font-size: 18px;
+}
+
+/* активные кнопки тулбара */
+.btn {
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	background: #ffffff;
+	padding: 6px 10px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.btn.active {
+	background: #e0f2fe;
+	border-color: #7dd3fc;
+}
+
+/* рендер мини-HTML по data-* атрибутам */
+.render-html p {
+	margin: 0 0 8px 0;
+}
+
+.render-html img[data-lexical-image] {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+	overflow: hidden;
+	border: 1px solid #e5e7eb;
+	margin: 8px 0 12px;
+}
+
+.render-html [data-lexical-file] {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+	padding: 10px 12px;
+	margin: 8px 0;
+}
+
+.render-html [data-lexical-file]::before {
+	content: "📄";
+	font-size: 18px;
+	line-height: 1;
+}
+
+.render-html [data-lexical-file]>a {
+	color: #111827;
+	font-weight: 600;
+	text-decoration: none;
+	word-break: break-all;
+}
+
+.render-html [data-lexical-file]>a:hover {
+	text-decoration: underline;
+}
+
+/* styles/ui/link-input.css */
+
+.link-input {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 14px 16px;
+	border: 1px solid #d1d5db;
+	/* серый */
+	border-radius: 8px;
+	background: #fff;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #111827;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	/* убрать underline */
+}
+
+.link-input:hover {
+	border-color: #9ca3af;
+	background: #f9fafb;
+}
+
+.link-input:active {
+	border-color: #2563eb;
+	background: #eff6ff;
+}
+
+.link-input .placeholder {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	color: #9ca3af;
+	font-size: 16px;
+	transition: all 0.2s ease;
+}
+
+.link-input.has-value .placeholder {
+	top: 6px;
+	font-size: 12px;
+	color: #6b7280;
+}

@@ -1,0 +1,89 @@
+.wrapper {
+	display: grid;
+	gap: 16px;
+	padding: 16px;
+}
+
+.h1 {
+	font-size: 20px;
+	margin: 0;
+}
+
+.wrapper {
+	display: grid;
+	gap: 16px;
+	padding: 16px;
+	font-family: "Fira Code", "Courier New";
+}
+
+.h1 {
+	font-size: 20px;
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	/* заголовки можно отдельно */
+}
+
+.card {
+	border: 1px solid #e5e7eb;
+	border-radius: 10px;
+	background: #fff;
+	padding: 16px;
+}
+
+.h2 {
+	font-size: 16px;
+	margin: 0 0 8px;
+}
+
+.textarea {
+	width: 100%;
+	min-height: 300px;
+	padding: 12px;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+	font-size: 13px;
+	line-height: 1.6;
+	resize: vertical;
+	outline: none;
+	background: #0b1021;
+	color: #e5e7eb;
+}
+
+.status {
+	margin: 8px 0 0;
+	font-size: 13px;
+}
+
+.actions {
+	display: flex;
+	gap: 12px;
+	margin-top: 12px;
+}
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 16px;
+	border-radius: 8px;
+	border: 1px solid #e5e7eb;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.buttonPrimary {
+	background: #111827;
+	color: #fff;
+}
+
+.buttonPrimary:disabled {
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+.buttonSecondary {
+	background: #fff;
+	color: #111827;
+}
